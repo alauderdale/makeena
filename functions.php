@@ -11,8 +11,7 @@
   //main nav
   
   register_nav_menu( 'main_nav', __( 'Main navigation menu', 'mytheme' ) );
-  register_nav_menu( 'footer1', __( '1st navigation menu', 'mytheme' ) );
-  register_nav_menu( 'footer2', __( '2nd navigation menu in footer', 'mytheme' ) );
+  register_nav_menu( 'footer', __( 'footer navigation menu', 'mytheme' ) );
 
       /*** Register our sidebars and widgetized areas.**/
     function wli_widgets_init() {
@@ -35,41 +34,31 @@
     
     function create_my_post_types() {
     
-        register_post_type( 'testimonial',
+        register_post_type( 'person',
             array(
                 'labels' => array(
-                    'name' => __( 'Testimonials' ),
-                    'singular_name' => __( 'Testimonial' )
+                    'name' => __( 'People' ),
+                    'singular_name' => __( 'Person' )
                 ),
                 'supports' => array( 'title', 'editor', 'excerpt', 'custom-fields', 'thumbnail' ),
                 'public' => true,
             )
         );
-        register_post_type( 'home-preview',
+        register_post_type( 'home-icon',
             array(
                 'labels' => array(
-                    'name' => __( 'home preview' ),
-                    'singular_name' => __( 'home preview' )
+                    'name' => __( 'Home Icon' ),
+                    'singular_name' => __( 'icon' )
                 ),
                 'supports' => array( 'title', 'editor', 'excerpt', 'custom-fields', 'thumbnail' ),
                 'public' => true,
             )
         );
-        register_post_type( 'about-point',
+        register_post_type( 'social-icon',
             array(
                 'labels' => array(
-                    'name' => __( 'about point' ),
-                    'singular_name' => __( 'point' )
-                ),
-                'supports' => array( 'title', 'editor', 'excerpt', 'custom-fields', 'thumbnail' ),
-                'public' => true,
-            )
-        );
-        register_post_type( 'social-block',
-            array(
-                'labels' => array(
-                    'name' => __( 'Social block' ),
-                    'singular_name' => __( 'point' )
+                    'name' => __( 'Home Icon' ),
+                    'singular_name' => __( 'icon' )
                 ),
                 'supports' => array( 'title', 'editor', 'excerpt', 'custom-fields', 'thumbnail' ),
                 'public' => true,
@@ -93,155 +82,45 @@
 	$prefix = 'wli';
 
 	$meta_boxes = array(
-	    ///page
+	    ///people
 	    array(
 	        'id' => 'my-meta-box-1',
-	        'title' => 'Page Options',
-	        'pages' => array('page'), // multiple post types
+	        'title' => 'Options',
+	        'pages' => array('person'), // multiple post types
 	        'context' => 'normal',
 	        'priority' => 'high',
 	        'fields' => array(
 	            array(
-	                'name' => 'Hero Title',
-	                'desc' => 'add text for the hero title',
-	                'id' => 'hero_title',
+	                'name' => 'Title',
+	                'desc' => 'add text for the person\'s title',
+	                'id' => 'title',
 	                'type' => 'text',
 	                'std' => ''
-	            ),
-	            array(
-	                'name' => 'Hero Sub Title',
-	                'desc' => 'add text for the sub hero title',
-	                'id' => 'hero_sub',
-	                'type' => 'text',
-	                'std' => ''
-	            ),
+	            )
 	        )
 	    ),
-	    ///testimonials
+	    ///people
 	    array(
 	        'id' => 'my-meta-box-2',
-	        'title' => 'Testimonial Options',
-	        'pages' => array('testimonial'), // multiple post types
-	        'context' => 'normal',
-	        'priority' => 'high',
-	        'fields' => array(
-	            array(
-	                'name' => 'Quote',
-	                'desc' => 'add the testimonial text',
-	                'id' => 'testimonial',
-	                'type' => 'textarea',
-	                'std' => ''
-	            ),
-	            array(
-	                'name' => 'Speaker title',
-	                'desc' => 'add speakers title',
-	                'id' => 'title',
-	                'type' => 'text',
-	                'std' => ''
-	            )
-	        )
-	    ),
-	    ///about points
-	    array(
-	        'id' => 'my-meta-box-3',
 	        'title' => 'Options',
-	        'pages' => array('about-point'), // multiple post types
+	        'pages' => array('social-icon'), // multiple post types
 	        'context' => 'normal',
 	        'priority' => 'high',
 	        'fields' => array(
 	            array(
-	                'name' => 'Icon Class',
-	                'desc' => 'enter the <a target="_blank" href="http://fortawesome.github.io/Font-Awesome/icons/">font-awesome</a> icon class ex: icon-home',
-	                'id' => 'class',
-	                'type' => 'text',
-	                'std' => ''
-	            )
-	        )
-	    ),
-	    ///post
-	    array(
-	        'id' => 'my-meta-box-4',
-	        'title' => 'Homepage Featured Post Options',
-	        'pages' => array('post'), // multiple post types
-	        'context' => 'normal',
-	        'priority' => 'high',
-	        'fields' => array(
-	            array(
-	                'name' => 'Icon Class',
-	                'desc' => 'enter the <a target="_blank" href="http://fortawesome.github.io/Font-Awesome/icons/">font-awesome</a> icon class ex: icon-home',
+	                'name' => 'class',
+	                'desc' => 'add the icon letter from this font http://fontfabric.com/social-media-icons-pack/',
 	                'id' => 'class',
 	                'type' => 'text',
 	                'std' => ''
 	            ),
 	            array(
-	                'name' => 'Homepage Slider title',
-	                'desc' => 'enter the text for the homepage slider',
-	                'id' => 'slider_title',
-	                'type' => 'text',
-	                'std' => ''
-	            ),
-	            array(
-	                'name' => 'Button Title',
-	                'desc' => 'enter the text for the slider call to action',
-	                'id' => 'slider_cta_title',
-	                'type' => 'text',
-	                'std' => ''
-	            ),
-	            array(
-	                'name' => 'Custom Button Link',
-	                'desc' => 'enter link for the slider call to action. If blank will link to the post',
-	                'id' => 'slider_cta_link',
-	                'type' => 'text',
-	                'std' => ''
-	            )
-	        )
-	    ),
-			///home preview
-	    array(
-	        'id' => 'my-meta-box-5',
-	        'title' => 'Homepage Featured Post Options',
-	        'pages' => array('home-preview'), // multiple post types
-	        'context' => 'normal',
-	        'priority' => 'high',
-	        'fields' => array(
-	            array(
-	                'name' => 'Link Title',
-	                'desc' => 'enter the text for the slider call to action',
-	                'id' => 'title',
-	                'type' => 'text',
-	                'std' => ''
-	            ),
-	            array(
-	                'name' => 'Link URL',
-	                'desc' => 'enter link for the post',
+	                'name' => 'link',
+	                'desc' => 'add the icon link',
 	                'id' => 'link',
 	                'type' => 'text',
 	                'std' => ''
-	            )
-	        )
-	    ),
-	    ///home preview
-	    array(
-	        'id' => 'my-meta-box-6',
-	        'title' => 'Options',
-	        'pages' => array('social-block'), // multiple post types
-	        'context' => 'normal',
-	        'priority' => 'high',
-	        'fields' => array(
-	            array(
-	                'name' => 'Icon Class',
-	                'desc' => 'enter the <a target="_blank" href="http://fortawesome.github.io/Font-Awesome/icons/">font-awesome</a> icon class ex: icon-home',
-	                'id' => 'class',
-	                'type' => 'text',
-	                'std' => ''
 	            ),
-	            array(
-	                'name' => 'Link URL',
-	                'desc' => 'enter link for the post',
-	                'id' => 'link',
-	                'type' => 'text',
-	                'std' => ''
-	            )
 	        )
 	    )
 	);

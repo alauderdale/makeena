@@ -28,12 +28,12 @@
           <span class='icon-bar'></span>
         </button>
         <a class='navbar-brand logo double-margin-right' href='<?php echo get_option('home'); ?>'>
-            Brand
+            
         </a>
       </div>
-      <div class='collapse navbar-collapse navbar-ex1-collapse pull-right'>
+      <div class='collapse navbar-collapse navbar-ex1-collapse'>
 <!--         main menu -->
-        <?php wp_nav_menu( array('menu' => 'Main', 'container' => '', 'items_wrap' => '<ul class="nav navbar-nav">%3$s</ul>' )); ?>
+        <?php wp_nav_menu( array('menu' => 'Main', 'container' => '', 'items_wrap' => '<ul class="nav navbar-nav navbar-right">%3$s</ul>' )); ?>
       </div>
     </div>
   </nav>
