@@ -57,7 +57,7 @@
         register_post_type( 'social-icon',
             array(
                 'labels' => array(
-                    'name' => __( 'Home Icon' ),
+                    'name' => __( 'Social Icon' ),
                     'singular_name' => __( 'icon' )
                 ),
                 'supports' => array( 'title', 'editor', 'excerpt', 'custom-fields', 'thumbnail' ),
@@ -108,7 +108,7 @@
 	        'priority' => 'high',
 	        'fields' => array(
 	            array(
-	                'name' => 'class',
+	                'name' => 'icon letter',
 	                'desc' => 'add the icon letter from this font http://fontfabric.com/social-media-icons-pack/',
 	                'id' => 'class',
 	                'type' => 'text',

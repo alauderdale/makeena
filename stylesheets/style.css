@@ -642,7 +642,7 @@ section.home-icons {
   padding: 24px 48px;
 }
 
-/* line 536, ../sass/style.css.scss */
+/* line 540, ../sass/style.css.scss */
 .clearfix:after {
   visibility: hidden;
   display: block;
@@ -652,13 +652,13 @@ section.home-icons {
   height: 0;
 }
 
-/* line 544, ../sass/style.css.scss */
+/* line 548, ../sass/style.css.scss */
 * html .clearfix {
   zoom: 1;
 }
 
 /* IE6 */
-/* line 545, ../sass/style.css.scss */
+/* line 549, ../sass/style.css.scss */
 *:first-child + html .clearfix {
   zoom: 1;
 }
