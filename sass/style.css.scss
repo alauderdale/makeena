@@ -1,0 +1,503 @@
+@import 'bourbon/bourbon';
+
+// color vars
+
+$primary-color: orange;
+$light-gray-color: #f2f2f2;
+$dark-gray-color: #bbb;
+$gray-color:#dddddd;
+$text-color: #3b3b3b;
+$black-color:#2a2929;
+
+// font vars
+
+$light-font-name:'museo_sans_100regular', Helvetica, Arial, sans-serif;
+$regular-font-name:'museo_sans_300regular', Helvetica, Arial, sans-serif;
+$bold-font-name:'museo_sans_700regular', Helvetica, Arial, sans-serif;
+$extra-bold-font-name:'museo_sans_900regular', Helvetica, Arial, sans-serif;
+$paragraph-font-name:'museo_sans_300regular', Helvetica, Arial, sans-serif;
+$social-font-name: 'socialicoregular';
+
+// baseline
+
+$baseline: 24px;
+
+// text vars
+
+$text-column-gutter-width: $baseline;
+
+//fonts
+
+@font-face {
+    font-family: 'socialicoregular';
+    src: url('../font/socialico-webfont.eot');
+    src: url('../font/socialico-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/socialico-webfont.woff') format('woff'),
+         url('../font/socialico-webfont.ttf') format('truetype'),
+         url('../font/socialico-webfont.svg#socialicoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'museo_sans_700regular';
+    src: url('../font/museosans_700-webfont.eot');
+    src: url('../font/museosans_700-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/museosans_700-webfont.woff') format('woff'),
+         url('../font/museosans_700-webfont.ttf') format('truetype'),
+         url('../font/museosans_700-webfont.svg#museo_sans_500regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'museo_sans_500regular';
+    src: url('../font/museosans_500-webfont.eot');
+    src: url('../font/museosans_500-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/museosans_500-webfont.woff') format('woff'),
+         url('../font/museosans_500-webfont.ttf') format('truetype'),
+         url('../font/museosans_500-webfont.svg#museo_sans_500regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'museo_sans_900regular';
+    src: url('../font/museosans_900-webfont.eot');
+    src: url('../font/museosans_900-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/museosans_900-webfont.woff') format('woff'),
+         url('../font/museosans_900-webfont.ttf') format('truetype'),
+         url('../font/museosans_900-webfont.svg#museo_sans_900regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'museo_sans_300regular';
+    src: url('../font/museosans-300-webfont.eot');
+    src: url('../font/museosans-300-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/museosans-300-webfont.woff') format('woff'),
+         url('../font/museosans-300-webfont.ttf') format('truetype'),
+         url('../font/museosans-300-webfont.svg#museo_sans_300regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'museo_sans_100regular';
+    src: url('../font/museosans-100-webfont.eot');
+    src: url('../font/museosans-100-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/museosans-100-webfont.woff') format('woff'),
+         url('../font/museosans-100-webfont.ttf') format('truetype'),
+         url('../font/museosans-100-webfont.svg#museo_sans_100regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+body{
+  font: 100% $paragraph-font-name;
+  font-size:16px;
+  color: $text-color;
+  //for fixed navbar
+  padding-top:50px;
+  -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+  -webkit-text-size-adjust: 100%;
+  width:100%;
+  line-height: $baseline;
+}
+
+//bg
+
+
+
+.no-bg{
+  background:transparent!important;
+}
+
+.white-bg{
+  background:white;
+}
+
+
+
+
+//links
+
+a{
+  color:$primary-color!important;
+  &:hover{
+    color:shade($primary-color,30%)!important;
+    text-decoration:none;
+  }
+  &.btn-link{
+    border-left:3px solid $primary-color;
+    padding:0 $baseline*1.3 0 $baseline/2;
+    background:url(../images/tiny_arrow.png) no-repeat right center;
+    font-family:$bold-font-name;
+    font-style:italic;
+    @include transition-duration(.3s);
+    &:hover{
+      border-left:3px solid $primary-color;
+      padding-right:$baseline*1.5;
+      text-decoration:none;
+    }
+  }
+}
+
+
+// type
+
+.primary-text-color{
+  color:$primary-color;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { 
+  font-weight: inherit; 
+}
+h1, h2, h3, h4, h5, h6, p {
+  margin:0;
+  margin-bottom:$baseline; 
+  color:$text-color;
+}
+
+h1,h2,h3,h4{
+  font-family:$regular-font-name;
+}
+h5,h6{
+  font-family:$extra-bold-font-name;
+}
+
+p  {font-size: 1em; line-height:$baseline;}
+h1 { font-size: 2.8em; line-height:$baseline*2;}
+h2 { font-size: 2em; line-height:$baseline*1.5;}
+h3 { font-size: 1.8em; line-height:$baseline*1.5;}
+h4 { font-size: 1.4em; line-height:$baseline;}
+h5 { font-size: 1em; line-height:$baseline;}
+h6 { font-size: 0.9em; line-height:$baseline;}
+
+//text columns
+
+.text-columns-2{
+  @include columns($text-column-gutter-width 2);
+}
+.text-columns-3{
+  @include columns($text-column-gutter-width 3);
+}
+.text-columns-4{
+  @include columns($text-column-gutter-width 4);
+}
+
+.text-uppercase{
+  text-transform:uppercase;
+}
+
+
+//font families
+
+.bold-font-name{
+    font-family:$bold-font-name;
+}
+.extra-bold-font-name{
+    font-family:$bold-font-name;
+}
+.regular-font-name{
+    font-family:$regular-font-name;
+}
+.paragraph-font-name{
+    font-family:$paragraph-font-name;
+}
+.social-font-name{
+    font-family:$social-font-name;
+}
+
+// display
+    
+.relative{
+  position:relative;
+}
+
+.hidden{
+    display:none;
+}
+
+.base-line-height{
+    line-height:$baseline;
+}
+
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+
+.full-width{
+    width:100%;
+}
+img{
+  &.full-width{
+    height:auto;
+  }
+}
+
+.display-block{
+    display:block;
+}
+
+.inline-block{
+    display:inline-block;
+}
+
+.inline{
+    display:inline;
+}
+
+ul.inline{
+    list-style:none;
+    margin-left:0;
+    li{
+        display:inline-block;
+        padding:0 5px;
+    }
+}
+
+//margin helpers
+.margin-auto {
+  margin: 0 auto;
+}
+.margin {
+  margin: $baseline !important;
+}
+.margin-top {
+  margin-top: $baseline !important;
+}
+.margin-right {
+  margin-right: $baseline !important;
+}
+.margin-bottom {
+  margin-bottom: $baseline !important;
+}
+.margin-left {
+  margin-left: $baseline !important;
+}
+.double-margin-top {
+  margin-top: $baseline*2 !important;
+}
+.double-margin-right {
+  margin-right: $baseline*2 !important;
+}
+.double-margin-bottom {
+  margin-bottom: $baseline*2 !important;
+}
+.double-margin-left {
+  margin-left: $baseline*2 !important;
+}
+.triple-margin-top {
+  margin-top: $baseline*3 !important;
+}
+.triple-margin-right {
+  margin-right: $baseline*3 !important;
+}
+.triple-margin-bottom {
+  margin-bottom: $baseline*3 !important;
+}
+.triple-margin-left {
+  margin-left: $baseline*3 !important;
+}
+.half-margin-top {
+  margin-top: $baseline/2 !important;
+}
+.half-margin-right {
+  margin-right: $baseline/2 !important;
+}
+.half-margin-bottom {
+  margin-bottom: $baseline/2 !important;
+}
+.half-margin-left {
+  margin-left: $baseline/2 !important;
+}
+.quarter-margin-top {
+  margin-top: $baseline/4 !important;
+}
+.quarter-margin-right {
+  margin-right: $baseline/4 !important;
+}
+.quarter-margin-bottom {
+  margin-bottom: $baseline/4 !important;
+}
+.quarter-margin-left {
+  margin-left: $baseline/4 !important;
+}
+.no-margin {
+  margin: 0px !important;
+}
+.no-margin-top {
+  margin-top: 0px !important;
+}
+.no-margin-right {
+  margin-right: 0px !important;
+}
+.no-margin-bottom {
+  margin-bottom: 0px !important;
+}
+.no-margin-left {
+  margin-left: 0px !important;
+}
+.large-margin-top {
+  margin-top: $baseline*3 !important;
+}
+
+//padding helpers
+.padded {
+  padding: $baseline !important;
+}
+.double-padding {
+  padding: $baseline*2 !important;
+}
+.padding-top {
+  padding-top: $baseline !important;
+}
+.padding-right {
+  padding-right: $baseline !important;
+}
+.padding-bottom {
+  padding-bottom: $baseline !important;
+}
+.padding-left {
+  padding-left: $baseline !important;
+}
+.double-padding-top {
+  padding-top: $baseline*2 !important;
+}
+.double-padding-right {
+  padding-right: $baseline*2 !important;
+}
+.double-padding-bottom {
+  padding-bottom: $baseline*2 !important;
+}
+.double-padding-left {
+  padding-left: $baseline*2 !important;
+}
+.no-padding {
+  padding: 0px !important;
+}
+.no-padding-top {
+  padding-top: 0px !important;
+}
+.no-padding-right {
+  padding-right: 0px !important;
+}
+.no-padding-bottom {
+  padding-bottom: 0px !important;
+}
+.no-padding-left {
+  padding-left: 0px !important;
+}
+.half-padding {
+  padding: $baseline/2 !important;
+}
+.half-padding-top {
+  padding-top: $baseline/2 !important;
+}
+.half-padding-right {
+  padding-right: $baseline/2 !important;
+}
+.half-padding-bottom {
+  padding-bottom: $baseline/2 !important;
+}
+.half-padding-left {
+  padding-left: $baseline/2 !important;
+}
+.quarter-padding {
+  padding: $baseline/4 !important;
+}
+.quarter-padding-top {
+  padding-top: $baseline/4 !important;
+}
+.quarter-padding-right {
+  padding-right: $baseline/4 !important;
+}
+.quarter-padding-bottom {
+  padding-bottom: $baseline/4 !important;
+}
+.quarter-padding-left {
+  padding-left: $baseline/4 !important;
+}
+
+//borders
+
+.no-border{
+  border:none;
+}
+
+.bordered{
+  border:1px solid $light-gray-color;
+}
+
+.border-bottom{
+  border-bottom:1px solid $light-gray-color;
+}
+
+
+//buttons
+
+.btn{
+  text-transform:uppercase;
+  @include transition-duration(.3s);
+  &.btn-primary{
+    background-color:$primary-color;
+    color:white!important;
+    border:none;
+  }
+  &:hover{
+    background-color:tint($primary-color,20%)!important;
+  }
+  &.btn-default{
+    @include transition-duration(.3s);
+    border:none;
+    color:$text-color!important;
+    font-family:$bold-font-name;
+    &:hover{
+      background-color:shade(white,10%)!important;
+      border:none;
+    }
+  }
+}
+
+
+//sections
+
+section{
+  padding:$baseline 0;
+}
+
+
+
+// Clearing
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+    }
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
