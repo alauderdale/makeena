@@ -15,8 +15,8 @@
 					      ?>
 					      <?php while ( $postLoop->have_posts() ) : $postLoop->the_post(); ?>
 					      <li>
-					      	<a href="#">
-					      		b
+					      	<a href="#" target="_blank">
+					      		<?php echo get_post_meta($post->ID, 'class', true); ?>
 					      	</a>
 					      <?php endwhile; ?>
 				      </div>
