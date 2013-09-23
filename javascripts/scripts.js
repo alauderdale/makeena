@@ -9,7 +9,7 @@ $(document).ready(function(){
     controlNavigation: 'bullets',
     imageScaleMode: 'fill',
     imageAlignCenter:true,
-    loop: false,
+    loop: true,
     loopRewind: false,
     numImagesToPreload: 6,
     keyboardNavEnabled: true,

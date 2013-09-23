@@ -64,6 +64,16 @@
                 'public' => true,
             )
         );
+        register_post_type( 'slider-image',
+            array(
+                'labels' => array(
+                    'name' => __( 'Phone Slider image' ),
+                    'singular_name' => __( 'icon' )
+                ),
+                'supports' => array( 'title', 'editor', 'excerpt', 'custom-fields', 'thumbnail' ),
+                'public' => true,
+            )
+        );
     }
 
 

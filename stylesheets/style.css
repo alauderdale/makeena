@@ -610,20 +610,25 @@ section.home-icons {
   padding-top: 120px;
   margin-top: -120px;
 }
-/* line 509, ../sass/style.css.scss */
+/* line 507, ../sass/style.css.scss */
+section .home-icon img {
+  width: 37px;
+  height: auto;
+}
+/* line 515, ../sass/style.css.scss */
 section.people .person .person-avatar img {
   width: 100px;
   height: auto;
 }
 
-/* line 520, ../sass/style.css.scss */
+/* line 526, ../sass/style.css.scss */
 .phone-slider {
   background: url(../images/iphone.png) no-repeat right;
   height: 541px;
   margin-right: 24px;
 }
 
-/* line 526, ../sass/style.css.scss */
+/* line 532, ../sass/style.css.scss */
 .trees {
   margin-left: -33px;
   z-index: -1;
@@ -631,27 +636,28 @@ section.people .person .person-avatar img {
   display: inline-block;
 }
 
-/* line 533, ../sass/style.css.scss */
+/* line 539, ../sass/style.css.scss */
 .home-icon {
   padding: 24px 48px;
 }
 
-/* line 539, ../sass/style.css.scss */
+/* line 545, ../sass/style.css.scss */
 footer {
   border-top: #bbb 1px solid;
   display: inline-block;
   width: 100%;
 }
 
-/* line 545, ../sass/style.css.scss */
+/* line 551, ../sass/style.css.scss */
 ul.footer-social {
   text-align: right;
 }
-/* line 547, ../sass/style.css.scss */
+/* line 553, ../sass/style.css.scss */
 ul.footer-social li {
   font-size: 3em;
+  padding-left: 0px !important;
 }
-/* line 549, ../sass/style.css.scss */
+/* line 556, ../sass/style.css.scss */
 ul.footer-social li a {
   color: #777777;
   -webkit-transition-duration: 0.3s;
@@ -660,30 +666,30 @@ ul.footer-social li a {
   -o-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-/* line 552, ../sass/style.css.scss */
+/* line 559, ../sass/style.css.scss */
 ul.footer-social li a:hover {
   color: #171717 !important;
 }
 
-/* line 563, ../sass/style.css.scss */
+/* line 570, ../sass/style.css.scss */
 .user-info table, .user-info tr, .user-info td, .user-info th {
   border: none !important;
 }
-/* line 566, ../sass/style.css.scss */
+/* line 573, ../sass/style.css.scss */
 .user-info th {
   display: none;
 }
-/* line 569, ../sass/style.css.scss */
+/* line 576, ../sass/style.css.scss */
 .user-info .pdb-submit {
   margin-top: -103px;
 }
 
-/* line 575, ../sass/style.css.scss */
+/* line 582, ../sass/style.css.scss */
 .multicheckbox input {
   margin-right: 5px;
 }
 
-/* line 583, ../sass/style.css.scss */
+/* line 590, ../sass/style.css.scss */
 .clearfix:after {
   visibility: hidden;
   display: block;
@@ -693,38 +699,38 @@ ul.footer-social li a:hover {
   height: 0;
 }
 
-/* line 591, ../sass/style.css.scss */
+/* line 598, ../sass/style.css.scss */
 * html .clearfix {
   zoom: 1;
 }
 
 /* IE6 */
-/* line 592, ../sass/style.css.scss */
+/* line 599, ../sass/style.css.scss */
 *:first-child + html .clearfix {
   zoom: 1;
 }
 
 /* IE7 */
-/* line 597, ../sass/style.css.scss */
+/* line 604, ../sass/style.css.scss */
 #slider-in-laptop {
   margin-bottom: -361px;
   bottom: 461px;
   margin-left: 23px;
 }
 
-/* line 603, ../sass/style.css.scss */
+/* line 610, ../sass/style.css.scss */
 .laptopBg {
   float: right;
   display: block;
 }
 
-/* line 609, ../sass/style.css.scss */
+/* line 616, ../sass/style.css.scss */
 .rsBullets {
   bottom: -128px !important;
 }
 
 @media (max-width: 1000px) {
-  /* line 615, ../sass/style.css.scss */
+  /* line 622, ../sass/style.css.scss */
   .laptopBg {
     float: none;
     position: relative;
@@ -732,7 +738,7 @@ ul.footer-social li a:hover {
     right: 40px;
   }
 
-  /* line 625, ../sass/style.css.scss */
+  /* line 632, ../sass/style.css.scss */
   #slider-in-laptop {
     margin-bottom: -301px;
     bottom: 461px;
@@ -740,12 +746,12 @@ ul.footer-social li a:hover {
   }
 }
 @media (max-width: 800px) {
-  /* line 635, ../sass/style.css.scss */
+  /* line 642, ../sass/style.css.scss */
   .laptopBg {
     display: none;
   }
 
-  /* line 638, ../sass/style.css.scss */
+  /* line 645, ../sass/style.css.scss */
   .pdb-submit {
     margin-top: 0 !important;
     float: left !important;

@@ -16,10 +16,15 @@ Template Name: Home
               <div class="laptopBg">
                 <img src="<?php bloginfo('template_url'); ?>/images/iphone.png" class="imgBg" width="260" height="541">
                 <div id="slider-in-laptop" class="royalSlider rsDefaultInv">
-                  <img src="<?php bloginfo('template_url'); ?>/images/slider.png">
-                  <img src="<?php bloginfo('template_url'); ?>/images/slider.png">
-                  <img src="<?php bloginfo('template_url'); ?>/images/slider.png">
-                  <img src="<?php bloginfo('template_url'); ?>/images/slider.png">
+                  <?php
+                    $sliderLoop = new WP_Query( array( 'post_type' => 'slider-image') );
+                  ?>
+                  <?php while ( $sliderLoop->have_posts() ) : $sliderLoop->the_post(); ?>
+                  <img src="<?php
+                          $imgsrc3 = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), "Full");
+                          echo $imgsrc3[0];
+                          ?>">
+                  <?php endwhile; ?>
                 </div>
               </div>
             </div>
@@ -70,6 +75,11 @@ Template Name: Home
                           echo $imgsrc2[0];
                           ?>">
           <div>
+            <p class="half-margin-bottom">
+              <strong>
+                <?php the_title(); ?>
+              </strong>
+            </p>
             <?php the_content(); ?> 
           </div>
         </div>

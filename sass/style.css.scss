@@ -503,6 +503,12 @@ section{
     padding-top:$baseline*5;
     margin-top:-$baseline*5;
   }
+  .home-icon{
+    img{
+      width:37px;
+      height:auto;
+    }
+  }
   &.people{
     .person{
       .person-avatar{
@@ -546,6 +552,7 @@ ul.footer-social{
   text-align:right;
   li{
     font-size:3em;
+    padding-left:0px!important;
     a{
       color:$dark-gray-color;
       @include transition-duration(.3s);
