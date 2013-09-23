@@ -46,6 +46,18 @@ Template Name: Home
 </section>
 <section class='home-icons'>
   <div class='container'>
+    <div class='row margin-bottom'>
+      <div class='col-lg-1'></div>
+      <div class='col-lg-10'>
+        <div class="user-info">
+          <h4 class="text-center">Sign up for updates from makeena</h4>
+          <div class="user-form">
+            <?php echo do_shortcode("[pdb_signup]"); ?>
+          </div>
+        </div>
+      </div>
+      <div class='col-lg-1'></div>
+    </div>
     <div class='row'>
       <?php
         $postLoop = new WP_Query( array( 'post_type' => 'home-icon') );

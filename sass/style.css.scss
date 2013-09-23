@@ -457,22 +457,12 @@ ul.inline{
   text-transform:uppercase;
   @include transition-duration(.3s);
   &.btn-primary{
-    background-color:$primary-color;
+    background-color:$link-color;
     color:white!important;
     border:none;
   }
   &:hover{
-    background-color:tint($primary-color,20%)!important;
-  }
-  &.btn-default{
-    @include transition-duration(.3s);
-    border:none;
-    color:$text-color!important;
-    font-family:$bold-font-name;
-    &:hover{
-      background-color:shade(white,10%)!important;
-      border:none;
-    }
+    background-color:tint($link-color,20%)!important;
   }
 }
 
@@ -536,7 +526,7 @@ section{
 .trees{
   margin-left:-33px;
   z-index: -1;
-  margin-top:70px;
+  margin-top:17px;
   display:inline-block;
 }
 
@@ -566,6 +556,26 @@ ul.footer-social{
   }
 }
 
+
+//user sign up
+
+.user-info{
+  table, tr, td, th{
+    border:none!important;
+  }
+  th{
+    display:none;
+  }
+  .pdb-submit{
+    margin-top:-103px;
+  }
+}
+
+.multicheckbox{
+  input{
+    margin-right:5px;
+  }
+}
 
 
 // Clearing
@@ -624,6 +634,10 @@ display:block;
 
   .laptopBg{
     display:none;
+  }
+  .pdb-submit{
+    margin-top:0!important;
+    float: left!important;
   }
 
 }

@@ -26,4 +26,9 @@
     </footer>
   </body>
 <?php wp_footer(); ?>
+     <script src="<?php bloginfo('template_url'); ?>/javascripts/jquery-1.8.0.min.js" type="text/javascript"></script>
+    <script src="<?php bloginfo('template_url'); ?>/javascripts/jquery.easing-1.3.js" type="text/javascript"></script>
+    <script src="<?php bloginfo('template_url'); ?>/javascripts/bootstrap.js" type="text/javascript"></script>
+    <script src="<?php bloginfo('template_url'); ?>/javascripts/jquery.royalslider.min.js" type="text/javascript"></script>
+    <script src="<?php bloginfo('template_url'); ?>/javascripts/scripts.js" type="text/javascript"></script>
 </html>

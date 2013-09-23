@@ -1,18 +1,6 @@
 $(document).ready(function(){
 
-	/// menu
 
-    $(window).scroll(function(){
-     var divOffset2 = $('.shrink-nav').offset();
-     if(window.scrollY > divOffset2.top ){
-        $('.main-nav').addClass('small-nav');
-     }
-     if(window.scrollY < divOffset2.top){
-        $('.main-nav').removeClass('small-nav');
-     }
-    });
-
-jQuery(document).ready(function($) {
   var rsi = $('#slider-in-laptop').royalSlider({
     autoHeight: false,
     arrowsNav: false,
@@ -35,13 +23,10 @@ jQuery(document).ready(function($) {
   $('#slider-prev').click(function() {
     rsi.prev();
   });
-});
 
-  //test slider
-
-  $('.test-item:first-of-type').addClass('active');
-
-  $('ol.carousel-indicators li:first-of-type').addClass('active');
-    
+  $( ".form-table" ).addClass( "table" ); 
+  $( ".button-primary" ).addClass( "btn-primary btn-default btn btn-lg pull-right" ); 
+  $( "input[type='text']" ).addClass( "form-control input-lg" );  
+jQuery('input[name$="email"]').attr('placeholder', 'Your email ex: john@doe.com');  
 
 });
