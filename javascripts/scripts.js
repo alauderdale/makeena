@@ -12,25 +12,30 @@ $(document).ready(function(){
      }
     });
 
-	//slider
-  $('#full-width-slider').royalSlider({
-    arrowsNav: true,
-    loop: true,
-    keyboardNavEnabled: true,
-    controlsInside: false,
-    imageScaleMode: 'fill',
-    arrowsNavAutoHide: false,
-    autoScaleSlider: true, 
-    autoScaleSliderWidth: 960,     
-    autoScaleSliderHeight: 350,
+jQuery(document).ready(function($) {
+  var rsi = $('#slider-in-laptop').royalSlider({
+    autoHeight: false,
+    arrowsNav: false,
+    fadeinLoadedSlide: false,
+    controlNavigationSpacing: 0,
     controlNavigation: 'bullets',
-    thumbsFitInViewport: false,
-    navigateByClick: true,
-    startSlideId: 0,
-    autoPlay: false,
-    transitionType:'move',
-    globalCaption: true
+    imageScaleMode: 'fill',
+    imageAlignCenter:true,
+    loop: false,
+    loopRewind: false,
+    numImagesToPreload: 6,
+    keyboardNavEnabled: true,
+    autoScaleSlider: false,  
+    autoScaleSliderWidth: 320,     
+    autoScaleSliderHeight: 568
+  }).data('royalSlider');
+  $('#slider-next').click(function() {
+    rsi.next();
   });
+  $('#slider-prev').click(function() {
+    rsi.prev();
+  });
+});
 
   //test slider
 

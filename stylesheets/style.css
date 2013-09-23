@@ -641,9 +641,9 @@ section.people .person .person-avatar img {
 
 /* line 536, ../sass/style.css.scss */
 .trees {
-  margin-left: -57px;
+  margin-left: -33px;
   z-index: -1;
-  margin-top: 24px;
+  margin-top: 70px;
   display: inline-block;
 }
 
@@ -659,11 +659,15 @@ footer {
   width: 100%;
 }
 
-/* line 556, ../sass/style.css.scss */
+/* line 555, ../sass/style.css.scss */
+ul.footer-social {
+  text-align: right;
+}
+/* line 557, ../sass/style.css.scss */
 ul.footer-social li {
   font-size: 3em;
 }
-/* line 558, ../sass/style.css.scss */
+/* line 559, ../sass/style.css.scss */
 ul.footer-social li a {
   color: #777777;
   -webkit-transition-duration: 0.3s;
@@ -672,12 +676,12 @@ ul.footer-social li a {
   -o-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-/* line 561, ../sass/style.css.scss */
+/* line 562, ../sass/style.css.scss */
 ul.footer-social li a:hover {
   color: #171717 !important;
 }
 
-/* line 572, ../sass/style.css.scss */
+/* line 573, ../sass/style.css.scss */
 .clearfix:after {
   visibility: hidden;
   display: block;
@@ -687,15 +691,55 @@ ul.footer-social li a:hover {
   height: 0;
 }
 
-/* line 580, ../sass/style.css.scss */
+/* line 581, ../sass/style.css.scss */
 * html .clearfix {
   zoom: 1;
 }
 
 /* IE6 */
-/* line 581, ../sass/style.css.scss */
+/* line 582, ../sass/style.css.scss */
 *:first-child + html .clearfix {
   zoom: 1;
 }
 
 /* IE7 */
+/* line 587, ../sass/style.css.scss */
+#slider-in-laptop {
+  margin-bottom: -361px;
+  bottom: 461px;
+  margin-left: 23px;
+}
+
+/* line 593, ../sass/style.css.scss */
+.laptopBg {
+  float: right;
+  display: block;
+}
+
+/* line 599, ../sass/style.css.scss */
+.rsBullets {
+  bottom: -128px !important;
+}
+
+@media (max-width: 1000px) {
+  /* line 605, ../sass/style.css.scss */
+  .laptopBg {
+    float: none;
+    position: relative;
+    top: 50px;
+    right: 40px;
+  }
+
+  /* line 615, ../sass/style.css.scss */
+  #slider-in-laptop {
+    margin-bottom: -301px;
+    bottom: 461px;
+    margin-left: 23px;
+  }
+}
+@media (max-width: 800px) {
+  /* line 625, ../sass/style.css.scss */
+  .laptopBg {
+    display: none;
+  }
+}
