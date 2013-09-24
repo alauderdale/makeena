@@ -552,7 +552,6 @@ ul.inline li {
 
 /* line 456, ../sass/style.css.scss */
 .btn {
-  text-transform: uppercase;
   -webkit-transition-duration: 0.3s;
   -moz-transition-duration: 0.3s;
   -ms-transition-duration: 0.3s;

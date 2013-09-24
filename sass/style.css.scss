@@ -454,7 +454,7 @@ ul.inline{
 //buttons
 
 .btn{
-  text-transform:uppercase;
+
   @include transition-duration(.3s);
   &.btn-primary{
     background-color:$link-color;
