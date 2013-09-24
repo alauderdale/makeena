@@ -2,8 +2,11 @@
 <html>
   <head>
     <meta charset='utf-8'>
+    <meta content='width=device-width,initial-scale=1, user-scalable=no' name='viewport'>
     <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
-    <title>Site</title>
+    <title>
+      <?php wp_title(''); ?> <?php bloginfo('name'); ?>
+    </title>
     <link href="<?php bloginfo('template_url'); ?>/stylesheets/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="<?php bloginfo('template_url'); ?>/stylesheets/font-awesome.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="<?php bloginfo('template_url'); ?>/stylesheets/royalslider.css" media="screen" rel="stylesheet" type="text/css" />

@@ -74,6 +74,16 @@
                 'public' => true,
             )
         );
+        register_post_type( 'press',
+            array(
+                'labels' => array(
+                    'name' => __( 'Press' ),
+                    'singular_name' => __( 'Press' )
+                ),
+                'supports' => array( 'title', 'editor', 'excerpt', 'custom-fields', 'thumbnail' ),
+                'public' => true,
+            )
+        );
     }
 
 
@@ -127,6 +137,23 @@
 	            array(
 	                'name' => 'link',
 	                'desc' => 'add the icon link',
+	                'id' => 'link',
+	                'type' => 'text',
+	                'std' => ''
+	            ),
+	        )
+	    ),
+	    ///press
+	    array(
+	        'id' => 'my-meta-box-3',
+	        'title' => 'Options',
+	        'pages' => array('press'), // multiple post types
+	        'context' => 'normal',
+	        'priority' => 'high',
+	        'fields' => array(
+	            array(
+	                'name' => 'link',
+	                'desc' => 'add the press link',
 	                'id' => 'link',
 	                'type' => 'text',
 	                'std' => ''

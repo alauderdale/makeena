@@ -619,6 +619,18 @@ display:block;
 
 
 @media (max-width: 1000px) {
+
+  section{
+    &.home-hero{
+      padding-top:0!important;
+    }
+  }
+
+  .home-content{
+    margin-bottom:0!important;
+    margin-top:0!important;
+  }
+
   .laptopBg{
     float: none;
     position:relative;
@@ -626,13 +638,19 @@ display:block;
     right:40px;
   }
   .trees{
-
+    img{
+      width:100%;
+    }
   }
 
   #slider-in-laptop {
   margin-bottom: -301px;
   bottom: 461px;
   margin-left: 23px;
+}
+
+ul.footer-social{
+  text-align:center;
 }
 
 }

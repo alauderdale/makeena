@@ -55,7 +55,7 @@ Template Name: Home
       <div class='col-lg-1'></div>
       <div class='col-lg-10'>
         <div class="user-info">
-          <h4 class="text-center">Sign up for updates from makeena</h4>
+          <h4 class="text-center">Sign up for updates from makeena.</h4>
           <div class="user-form">
             <?php echo do_shortcode("[pdb_signup]"); ?>
           </div>

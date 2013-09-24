@@ -729,7 +729,18 @@ ul.footer-social li a:hover {
 }
 
 @media (max-width: 1000px) {
-  /* line 622, ../sass/style.css.scss */
+  /* line 624, ../sass/style.css.scss */
+  section.home-hero {
+    padding-top: 0 !important;
+  }
+
+  /* line 629, ../sass/style.css.scss */
+  .home-content {
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+  }
+
+  /* line 634, ../sass/style.css.scss */
   .laptopBg {
     float: none;
     position: relative;
@@ -737,20 +748,30 @@ ul.footer-social li a:hover {
     right: 40px;
   }
 
-  /* line 632, ../sass/style.css.scss */
+  /* line 641, ../sass/style.css.scss */
+  .trees img {
+    width: 100%;
+  }
+
+  /* line 646, ../sass/style.css.scss */
   #slider-in-laptop {
     margin-bottom: -301px;
     bottom: 461px;
     margin-left: 23px;
   }
+
+  /* line 652, ../sass/style.css.scss */
+  ul.footer-social {
+    text-align: center;
+  }
 }
 @media (max-width: 800px) {
-  /* line 642, ../sass/style.css.scss */
+  /* line 660, ../sass/style.css.scss */
   .laptopBg {
     display: none;
   }
 
-  /* line 645, ../sass/style.css.scss */
+  /* line 663, ../sass/style.css.scss */
   .pdb-submit {
     margin-top: 0 !important;
     float: left !important;
