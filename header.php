@@ -4,6 +4,7 @@
     <meta charset='utf-8'>
     <meta content='width=device-width,initial-scale=1, user-scalable=no' name='viewport'>
     <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+    <link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/images/favicon.ico" type="image/x-icon">
     <title>
       <?php wp_title(''); ?> <?php bloginfo('name'); ?>
     </title>

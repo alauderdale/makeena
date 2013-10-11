@@ -506,7 +506,7 @@ section{
   .home-icon{
     img{
       width:37px;
-      height:auto;
+      height:37px;
     }
   }
   &.people{
@@ -600,6 +600,16 @@ ul.footer-social{
 
 
 //slider
+
+.rsContainer{
+  img{
+    width:215px!important;
+  }
+}
+
+.rsDefaultInv .rsBullet.rsNavSelected{
+  background:$primary-color!important;
+}
 
 #slider-in-laptop {
   margin-bottom: -361px;

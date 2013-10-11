@@ -612,7 +612,7 @@ section.home-icons {
 /* line 507, ../sass/style.css.scss */
 section .home-icon img {
   width: 37px;
-  height: auto;
+  height: 37px;
 }
 /* line 515, ../sass/style.css.scss */
 section.people .person .person-avatar img {
@@ -710,37 +710,47 @@ ul.footer-social li a:hover {
 }
 
 /* IE7 */
-/* line 604, ../sass/style.css.scss */
+/* line 605, ../sass/style.css.scss */
+.rsContainer img {
+  width: 215px !important;
+}
+
+/* line 610, ../sass/style.css.scss */
+.rsDefaultInv .rsBullet.rsNavSelected {
+  background: #ee7739 !important;
+}
+
+/* line 614, ../sass/style.css.scss */
 #slider-in-laptop {
   margin-bottom: -361px;
   bottom: 461px;
   margin-left: 23px;
 }
 
-/* line 610, ../sass/style.css.scss */
+/* line 620, ../sass/style.css.scss */
 .laptopBg {
   float: right;
   display: block;
 }
 
-/* line 616, ../sass/style.css.scss */
+/* line 626, ../sass/style.css.scss */
 .rsBullets {
   bottom: -128px !important;
 }
 
 @media (max-width: 1000px) {
-  /* line 624, ../sass/style.css.scss */
+  /* line 634, ../sass/style.css.scss */
   section.home-hero {
     padding-top: 0 !important;
   }
 
-  /* line 629, ../sass/style.css.scss */
+  /* line 639, ../sass/style.css.scss */
   .home-content {
     margin-bottom: 0 !important;
     margin-top: 0 !important;
   }
 
-  /* line 634, ../sass/style.css.scss */
+  /* line 644, ../sass/style.css.scss */
   .laptopBg {
     float: none;
     position: relative;
@@ -748,30 +758,30 @@ ul.footer-social li a:hover {
     right: 40px;
   }
 
-  /* line 641, ../sass/style.css.scss */
+  /* line 651, ../sass/style.css.scss */
   .trees img {
     width: 100%;
   }
 
-  /* line 646, ../sass/style.css.scss */
+  /* line 656, ../sass/style.css.scss */
   #slider-in-laptop {
     margin-bottom: -301px;
     bottom: 461px;
     margin-left: 23px;
   }
 
-  /* line 652, ../sass/style.css.scss */
+  /* line 662, ../sass/style.css.scss */
   ul.footer-social {
     text-align: center;
   }
 }
 @media (max-width: 800px) {
-  /* line 660, ../sass/style.css.scss */
+  /* line 670, ../sass/style.css.scss */
   .laptopBg {
     display: none;
   }
 
-  /* line 663, ../sass/style.css.scss */
+  /* line 673, ../sass/style.css.scss */
   .pdb-submit {
     margin-top: 0 !important;
     float: left !important;

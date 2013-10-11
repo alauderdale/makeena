@@ -3,7 +3,7 @@
     		  <div class='container'>
 				    <div class='row'>
 				      <div class='col-lg-4 col-md-4 col-sm-4 text-center'>
-				      	©makeena, inc. - all rights reserved. 
+				      	<?php echo get_option('nt_copyright');?> 
 				      </div>
 				      <div class='col-lg-4 col-md-4 col-sm-4 text-center'>
 				      	<?php wp_nav_menu( array('theme_location' => 'footer' , 'container' => '', 'items_wrap' => '<ul class="list-inline">%3$s</ul>' )); ?>
