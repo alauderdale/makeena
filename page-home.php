@@ -6,7 +6,7 @@ Template Name: Home
 
 <?php get_header(); ?>
 
-<section class='home-hero'>
+<section class='home-hero no-padding-top'>
   <div class='container'>
     <div class='row'>
       <div class='col-lg-12'>
@@ -38,6 +38,9 @@ Template Name: Home
               <!--end the loop-->
               <?php endwhile; ?>
               <?php endif; ?>
+<!--               <a class="btn btn-default btn-lg" href="#sign-up">
+                Stay Up tp Date
+              </a> -->
             </div>
             <div class="trees">
               <img src="<?php bloginfo('template_url'); ?>/images/trees.png">

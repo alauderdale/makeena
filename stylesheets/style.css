@@ -593,8 +593,8 @@ ul.inline li {
 }
 /* line 488, ../sass/style.css.scss */
 .navbar a.logo {
-  width: 95px;
-  height: 42px;
+  width: 170px;
+  height: 51px;
   margin-left: 24px;
   background: url(../images/logo.png) no-repeat;
 }
@@ -607,7 +607,7 @@ section {
 section.home-icons {
   background-color: #f2f2f2;
   padding-top: 120px;
-  margin-top: -120px;
+  margin-top: -170px;
 }
 /* line 507, ../sass/style.css.scss */
 section .home-icon img {
@@ -735,7 +735,7 @@ ul.footer-social li a:hover {
 
 /* line 626, ../sass/style.css.scss */
 .rsBullets {
-  bottom: -128px !important;
+  bottom: -111px !important;
 }
 
 @media (max-width: 1000px) {

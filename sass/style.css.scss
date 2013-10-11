@@ -486,8 +486,8 @@ ul.inline{
       color:tint($black-color,30%)!important;
     }
     &.logo{
-      width:95px;
-      height:42px;
+      width:170px;
+      height:51px;
       margin-left:$baseline;
       background:url(../images/logo.png)no-repeat;
     }
@@ -501,7 +501,7 @@ section{
   &.home-icons{
     background-color:$light-gray-color;
     padding-top:$baseline*5;
-    margin-top:-$baseline*5;
+    margin-top:-170px;
   }
   .home-icon{
     img{
@@ -624,7 +624,7 @@ display:block;
 }
 
 .rsBullets{
-  bottom: -128px!important;
+  bottom: -111px!important;
 }
 
 
