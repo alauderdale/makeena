@@ -680,7 +680,7 @@ ul.footer-social li a:hover {
 }
 /* line 576, ../sass/style.css.scss */
 .user-info .pdb-submit {
-  margin-top: -103px;
+  width: 100%;
 }
 
 /* line 582, ../sass/style.css.scss */
@@ -758,30 +758,34 @@ ul.footer-social li a:hover {
     right: 40px;
   }
 
-  /* line 651, ../sass/style.css.scss */
+  /* line 650, ../sass/style.css.scss */
+  .trees {
+    margin-top: 103px;
+  }
+  /* line 652, ../sass/style.css.scss */
   .trees img {
     width: 100%;
   }
 
-  /* line 656, ../sass/style.css.scss */
+  /* line 657, ../sass/style.css.scss */
   #slider-in-laptop {
     margin-bottom: -301px;
     bottom: 461px;
     margin-left: 23px;
   }
 
-  /* line 662, ../sass/style.css.scss */
+  /* line 663, ../sass/style.css.scss */
   ul.footer-social {
     text-align: center;
   }
 }
 @media (max-width: 800px) {
-  /* line 670, ../sass/style.css.scss */
+  /* line 671, ../sass/style.css.scss */
   .laptopBg {
     display: none;
   }
 
-  /* line 673, ../sass/style.css.scss */
+  /* line 674, ../sass/style.css.scss */
   .pdb-submit {
     margin-top: 0 !important;
     float: left !important;

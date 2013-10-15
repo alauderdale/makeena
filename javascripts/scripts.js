@@ -27,6 +27,6 @@ $(document).ready(function(){
   $( ".form-table" ).addClass( "table" ); 
   $( ".button-primary" ).addClass( "btn-primary btn-default btn btn-lg pull-right" ); 
   $( "input[type='text']" ).addClass( "form-control input-lg" );  
-jQuery('input[name$="email"]').attr('placeholder', 'Your email ex: john@doe.com');  
+jQuery('input[name$="email"]').attr('placeholder', '');  
 
 });
